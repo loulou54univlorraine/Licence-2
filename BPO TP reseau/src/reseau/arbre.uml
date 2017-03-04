@@ -2,12 +2,93 @@
 <Diagram>
   <ID>JAVA</ID>
   <OriginalElement />
-  <nodes />
+  <nodes>
+    <node x="590.0" y="362.5">reseau.couches.UDP</node>
+    <node x="340.81818181818176" y="0.0">reseau.couches.Couche</node>
+    <node x="395.0" y="719.0">reseau.test.TestReseau</node>
+    <node x="838.6363636363636" y="167.5">reseau.couches.Application7</node>
+    <node x="1029.8181818181818" y="362.5">reseau.clientsServeurs.ServeurMaj</node>
+    <node x="218.0" y="498.0">reseau.adresses.Octet</node>
+    <node x="686.8181818181818" y="362.5">reseau.clientsServeurs.ClientNumerique</node>
+    <node x="19.5" y="181.0">reseau.couches.Reseau3</node>
+    <node x="26.0" y="638.0">reseau.adresses.AdresseMac</node>
+    <node x="268.99999999999994" y="362.5">reseau.couches.Ethernet</node>
+    <node x="0.0" y="719.0">reseau.tables.ARP</node>
+    <node x="208.49999999999994" y="167.0">reseau.couches.Liaison12</node>
+    <node x="0.0" y="498.0">reseau.adresses.Adresse</node>
+    <node x="445.49999999999994" y="181.0">reseau.couches.Transport4</node>
+    <node x="859.8181818181818" y="362.5">reseau.clientsServeurs.ServeurFoisDeux</node>
+    <node x="0.0" y="308.0">reseau.couches.IP</node>
+  </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
-  <SelectedNodes />
-  <Categories />
+  <edges>
+    <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
+      <point x="0.0" y="-18.0" />
+      <point x="1087.3181818181818" y="283.0" />
+      <point x="1000.3030303030304" y="283.0" />
+      <point x="64.66666666666674" y="45.0" />
+    </edge>
+    <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
+      <point x="0.0" y="-31.5" />
+      <point x="104.0" y="137.0" />
+      <point x="375.06818181818176" y="137.0" />
+      <point x="-102.75" y="58.5" />
+    </edge>
+    <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="45.5" />
+    </edge>
+    <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
+      <point x="0.0" y="-72.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
+      <point x="0.0" y="-45.0" />
+      <point x="935.6363636363636" y="137.0" />
+      <point x="580.5681818181818" y="137.0" />
+      <point x="102.75" y="58.5" />
+    </edge>
+    <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
+      <point x="0.0" y="-45.5" />
+      <point x="316.99999999999994" y="147.0" />
+      <point x="443.56818181818176" y="147.0" />
+      <point x="-34.25" y="58.5" />
+    </edge>
+    <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
+      <point x="0.0" y="-18.0" />
+      <point x="763.3181818181818" y="283.0" />
+      <point x="870.969696969697" y="283.0" />
+      <point x="-64.66666666666663" y="45.0" />
+    </edge>
+    <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
+      <point x="0.0" y="-31.5" />
+      <point x="625.0" y="147.0" />
+      <point x="512.0681818181818" y="147.0" />
+      <point x="34.25" y="58.5" />
+    </edge>
+    <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="45.0" />
+    </edge>
+    <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="45.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="596.1111111111111" y="439.55555555555554" />
+  <SelectedNodes>
+    <node>reseau.couches.Reseau3</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 
