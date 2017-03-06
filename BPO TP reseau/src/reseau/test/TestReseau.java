@@ -23,22 +23,10 @@ public class TestReseau {
         adr = new Adresse ("192.23.23.23") ;
         adrm = new AdresseMac("00.01.02.03.04.05") ;
         masque = new Adresse("255.255.0.0");
-
-        // Les couches  
         int portNum = 45;
-        Ethernet ethernet = new Ethernet(adrm);
-        IP ip = new IP(adr, masque);
-        UDP udp = new UDP();
-        Application7 appliClientNum = new ClientNumerique(portNum) ;
-        udp.ajouter(portNum,appliClientNum);
-
-        // Création des liaisons entre les couches
-        appliClientNum.setCoucheInferieure(udp);
-        udp.setCoucheInferieure(ip);
-        ip.setCouches(udp,ethernet);
-        ethernet.setCoucheSuperieure(ip);
-        // A compléter
-
+        Machine m1 = new Machine(nom, adr, adrm, masque);
+        Application7 appliClientNum = new ClientNumerique(portNum);
+        m1.ajouter(portNum, appliClientNum);
 
         //---------------------------------
         // Une autre machine
@@ -49,43 +37,22 @@ public class TestReseau {
 
         // Couches serveur
         int portFoisDeux = 888;
-        Ethernet ethernetServ = new Ethernet(adrmServ);
-        IP ipServ = new IP(adrServ, masqueServ);
-        UDP udpServ = new UDP();
-        Application7 appliServ = new ServeurFoisDeux(portFoisDeux) ;
-        udpServ.ajouter(portFoisDeux,appliServ);
-
-        // Création des liaisons entre les couches
-        appliServ.setCoucheInferieure(udpServ);
-        udpServ.setCoucheInferieure(ipServ);
-        ipServ.setCouches(udpServ,ethernetServ);
-        ethernetServ.setCoucheSuperieure(ipServ);
-
-        //---------------------------------
-        // Une autre machine
-        nomServ2 = "pollux" ;
-        adrServ2 = new Adresse ("192.23.89.41") ;
-        adrmServ2 = new AdresseMac("AA.CD.EF.00.AA.54") ;
-        masqueServ2 = new Adresse("255.255.0.0");
-
-        // Couches serveur
-        int portMaj = 888;
-        Ethernet ethernetServ2 = new Ethernet(adrmServ2);
-        IP ipServ2 = new IP(adrServ2, masqueServ2);
-        UDP udpServ2 = new UDP();
-        Application7 appliServ2 = new ServeurMaj(portMaj) ;
-        udpServ2.ajouter(portMaj,appliServ2);
-
-        // Création des liaisons entre les couches
-        appliServ2.setCoucheInferieure(udpServ2);
-        udpServ2.setCoucheInferieure(ipServ2);
-        ipServ2.setCouches(udpServ2,ethernetServ2);
-        ethernetServ2.setCoucheSuperieure(ipServ2);
-
+        int portMaj = 889;
+        Machine m2 = new Machine(nomServ, adrServ, adrmServ, masqueServ);
+        ReseauLocal r = new ReseauLocal();
+        r.ajouter(m2);
+        Application7 appliServeurFoisDeux = new ServeurFoisDeux(portFoisDeux);
+        m2.ajouter(portFoisDeux, appliServeurFoisDeux);
+        Application7 appliServeurMaj = new ServeurMaj(portMaj);
+        m2.ajouter(portMaj, appliServeurMaj);
         //---------------------------------
         // Liaison entre les 2 machines
-        ethernet.setVoisin(ethernetServ);
-        ethernetServ.setVoisin(ethernet);
+        m1.getCoucheLiaison12().setVoisin(m2.getCoucheLiaison12());
+
+        m2.getCoucheLiaison12().setVoisin(m1.getCoucheLiaison12());
+        //---------------------------------
+
+
         //---------------------------------
 
 
@@ -101,15 +68,11 @@ public class TestReseau {
         res = appliClientNum.getResultat() ;
         System.out.println("Et j'obtiens "+res.extraireEntier(0));
         //---------------------------------
-        // Liaison entre les 2 machines
-        ethernet.setVoisin(ethernetServ2);
-        ethernetServ2.setVoisin(ethernet);
-        //---------------------------------
         // Envoi d'un message pour Maj
         System.out.println("envoie d'un message pour mettre en maj:\n");
         val = new String ("abcdefghijklmnopqrstuvwxyz");
         mess2 = new Message(val) ;
-        dest2 = new Adresse("192.23.89.41");
+        dest2 = new Adresse("192.23.12.12");
         System.out.println("Je voudrais  "+val+" en majuscule");
         appliClientNum.sendMessage(dest2, portMaj, mess2) ;
         res = appliClientNum.getResultat() ;

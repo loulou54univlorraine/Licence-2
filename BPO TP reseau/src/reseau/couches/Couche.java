@@ -45,8 +45,8 @@ public abstract class Couche {
 
     @Override
     public String toString() {
-        // A compléter
+
         return null ;
     }
-    
+
 }

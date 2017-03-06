@@ -1,6 +1,7 @@
 package reseau.couches;
 
 import reseau.Message;
+import reseau.ReseauLocal;
 import reseau.adresses.AdresseMac;
 
 /**
@@ -8,11 +9,14 @@ import reseau.adresses.AdresseMac;
  */
 public abstract class Liaison12 extends Couche {
     protected  AdresseMac adrMac;
+    protected ReseauLocal r;
 
     protected Liaison12 voisin ;
+
     public Liaison12(AdresseMac am) {
         super( );
         adrMac = am ;
+        r = new ReseauLocal();
     }
 
     /**
@@ -23,9 +27,13 @@ public abstract class Liaison12 extends Couche {
         this.voisin = rl;
     }
 
-    public abstract void sendMessage(AdresseMac dest, Message message); 
+    public abstract void sendMessage(AdresseMac dest, Message message);
 
     protected abstract Message getEntete(AdresseMac des, Message message) ;
 
     public abstract void receiveMessage(Message message) ;
+
+    public void setReseau(ReseauLocal rl) {
+
+    }
 }
