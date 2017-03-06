@@ -21,7 +21,7 @@ public class Ethernet extends Liaison12 {
         // Afficher une trace de l'envoi
         System.out.println("Je suis "+getNom()+" et j'envoie "+message.size()+" octets : " +message);
         // Transmettre à la couche
-        voisin.receiveMessage(message);
+        .receiveMessage(message);
     }
 
 
@@ -37,7 +37,7 @@ public class Ethernet extends Liaison12 {
         if(adrMac.toString().equals(adr.toString())){
             // Afficher une trace de la reception
             System.out.println("Je suis "+getNom()+" et je passse "+message.size()+" octets reçus : " +message);
-            ((Reseau3)plusUn).receiveMessage(message);
+            r.sendTrame(message);
         }
     }
 

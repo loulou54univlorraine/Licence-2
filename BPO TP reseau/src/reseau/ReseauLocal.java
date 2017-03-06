@@ -2,6 +2,7 @@ package reseau;
 
 import reseau.adresses.Adresse;
 import reseau.adresses.AdresseMac;
+import reseau.couches.Liaison12;
 
 import java.util.ArrayList;
 
@@ -10,18 +11,27 @@ import java.util.ArrayList;
  */
 public class ReseauLocal {
 
-    private ArrayList<Machine> machines;
+    private ArrayList<Liaison12> reseaux;
 
     public ReseauLocal() {
-        machines = new ArrayList<Machine>();
-        machines.add(new Machine("machine1", new Adresse("192.23.23.23"), new AdresseMac("00.01.02.03.04.05"), new Adresse("255.255.0.0")));
-
-
+        reseaux = new ArrayList<Liaison12>();
     }
 
     public void ajouter(Machine m) {
-        machines.add(m);
+        reseaux.add(m.getCoucheLiaison12());
 
     }
+
+    public void sendTrame(Message trame) {
+        for (int i = 0; i < reseaux.size(); i++) {
+            reseaux.get(i).receiveMessage(trame);
+
+        }
+
+    }
+
+
 }
+
+
 

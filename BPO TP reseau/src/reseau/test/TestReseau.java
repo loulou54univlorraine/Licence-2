@@ -39,18 +39,15 @@ public class TestReseau {
         int portFoisDeux = 888;
         int portMaj = 889;
         Machine m2 = new Machine(nomServ, adrServ, adrmServ, masqueServ);
-        ReseauLocal r = new ReseauLocal();
-        r.ajouter(m2);
         Application7 appliServeurFoisDeux = new ServeurFoisDeux(portFoisDeux);
+        ReseauLocal r = new ReseauLocal();
+        r.ajouter(m1);
+        r.ajouter(m2);
         m2.ajouter(portFoisDeux, appliServeurFoisDeux);
         Application7 appliServeurMaj = new ServeurMaj(portMaj);
         m2.ajouter(portMaj, appliServeurMaj);
         //---------------------------------
-        // Liaison entre les 2 machines
-        m1.getCoucheLiaison12().setVoisin(m2.getCoucheLiaison12());
 
-        m2.getCoucheLiaison12().setVoisin(m1.getCoucheLiaison12());
-        //---------------------------------
 
 
         //---------------------------------

@@ -4,6 +4,8 @@ import reseau.Message;
 import reseau.ReseauLocal;
 import reseau.adresses.AdresseMac;
 
+import java.util.ArrayList;
+
 /**
  * @author martine
  */
