@@ -16,7 +16,6 @@ public abstract class Liaison12 extends Couche {
     public Liaison12(AdresseMac am) {
         super( );
         adrMac = am ;
-        r = new ReseauLocal();
     }
 
     /**
@@ -34,6 +33,6 @@ public abstract class Liaison12 extends Couche {
     public abstract void receiveMessage(Message message) ;
 
     public void setReseau(ReseauLocal rl) {
-
+        r = rl;
     }
 }
