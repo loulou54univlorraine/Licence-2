@@ -1,3 +1,4 @@
+
 package reseau.couches;
 
 import reseau.Message;
@@ -21,7 +22,7 @@ public class Ethernet extends Liaison12 {
         // Afficher une trace de l'envoi
         System.out.println("Je suis "+getNom()+" et j'envoie "+message.size()+" octets : " +message);
         // Transmettre à la couche
-        .receiveMessage(message);
+        voisin.receiveMessage();
     }
 
 

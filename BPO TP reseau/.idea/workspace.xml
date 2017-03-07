@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="613dc3a5-a289-45e3-b35b-f55ad6cba5b0" name="Default" comment="Commit update qui marche pas">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/test/TestReseau.class" afterPath="" />
+    <list default="true" id="613dc3a5-a289-45e3-b35b-f55ad6cba5b0" name="Default" comment="Commit update qui marche pas&#10;a finir">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Ethernet.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Ethernet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Liaison12.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Liaison12.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/ReseauLocal.java" afterPath="$PROJECT_DIR$/src/reseau/ReseauLocal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/couches/Ethernet.java" afterPath="$PROJECT_DIR$/src/reseau/couches/Ethernet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/couches/Liaison12.java" afterPath="$PROJECT_DIR$/src/reseau/couches/Liaison12.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/test/TestReseau.java" afterPath="$PROJECT_DIR$/src/reseau/test/TestReseau.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,6 +17,14 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -36,22 +42,120 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ethernet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ethernet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/Ethernet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="396">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application7.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application7.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/Application7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="154">
               <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arbre.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="353.0" y="389.5">reseau.couches.UDP</node>
+                <node x="410.0" y="0.0">reseau.couches.Couche</node>
+                <node x="395.0" y="746.0">reseau.test.TestReseau</node>
+                <node x="904.5" y="181.0">reseau.couches.Application7</node>
+                <node x="944.0" y="389.5">reseau.clientsServeurs.ServeurMaj</node>
+                <node x="218.0" y="525.0">reseau.adresses.Octet</node>
+                <node x="1079.0" y="389.5">reseau.clientsServeurs.ClientNumerique</node>
+                <node x="19.5" y="194.5">reseau.couches.Reseau3</node>
+                <node x="26.0" y="665.0">reseau.adresses.AdresseMac</node>
+                <node x="658.0" y="389.5">reseau.couches.Ethernet</node>
+                <node x="0.0" y="746.0">reseau.tables.ARP</node>
+                <node x="587.5" y="167.0">reseau.couches.Liaison12</node>
+                <node x="208.5" y="194.5">reseau.couches.Transport4</node>
+                <node x="0.0" y="525.0">reseau.adresses.Adresse</node>
+                <node x="0.0" y="335.0">reseau.couches.IP</node>
+                <node x="774.0" y="389.5">reseau.clientsServeurs.ServeurFoisDeux</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="45.0" />
+                </edge>
+                <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
+                  <point x="0.0" y="-31.5" />
+                  <point x="104.0" y="137.0" />
+                  <point x="444.25" y="137.0" />
+                  <point x="-102.75" y="58.5" />
+                </edge>
+                <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="59.0" />
+                </edge>
+                <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
+                  <point x="0.0" y="-72.5" />
+                  <point x="0.0" y="31.5" />
+                </edge>
+                <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
+                  <point x="0.0" y="-45.0" />
+                  <point x="1001.5" y="137.0" />
+                  <point x="649.75" y="137.0" />
+                  <point x="102.75" y="58.5" />
+                </edge>
+                <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
+                  <point x="0.0" y="-59.0" />
+                  <point x="706.0" y="147.0" />
+                  <point x="581.25" y="147.0" />
+                  <point x="34.25" y="58.5" />
+                </edge>
+                <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="31.5" />
+                </edge>
+                <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
+                  <point x="0.0" y="-18.0" />
+                  <point x="1155.5" y="310.0" />
+                  <point x="1066.1666666666667" y="310.0" />
+                  <point x="64.66666666666674" y="45.0" />
+                </edge>
+                <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
+                  <point x="0.0" y="-31.5" />
+                  <point x="388.0" y="147.0" />
+                  <point x="512.75" y="147.0" />
+                  <point x="-34.25" y="58.5" />
+                </edge>
+                <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
+                  <point x="0.0" y="-18.0" />
+                  <point x="849.0" y="310.0" />
+                  <point x="936.8333333333333" y="310.0" />
+                  <point x="-64.66666666666674" y="45.0" />
+                </edge>
+                <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="45.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9" x="-0.3333333333333144" y="-1173.3333333333333" />
+              <SelectedNodes>
+                <node>reseau.couches.Reseau3</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Inner Classes</Category>
+                <Category>Properties</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -196,134 +300,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="couches" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clientsServeurs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BPO TP reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reseau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adresses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,7 +732,7 @@
       <workItem from="1488645904723" duration="852000" />
       <workItem from="1488649273123" duration="9000" />
       <workItem from="1488801464662" duration="60000" />
-      <workItem from="1488812908214" duration="8945000" />
+      <workItem from="1488812908214" duration="10549000" />
     </task>
     <task id="LOCAL-00001" summary="test commit intellij">
       <created>1488646125475</created>
@@ -779,11 +755,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488818607176</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit update qui marche pas&#10;a finir">
+      <created>1488821873154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1488821873154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9866000" />
+    <option name="totallyTimeSpent" value="11470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -799,15 +782,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32235295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20235294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16487648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -848,7 +831,8 @@
     <MESSAGE value="test commit intellij" />
     <MESSAGE value="Commit update" />
     <MESSAGE value="Commit update qui marche pas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit update qui marche pas" />
+    <MESSAGE value="Commit update qui marche pas&#10;a finir" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit update qui marche pas&#10;a finir" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -892,43 +876,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">reseau.couches.UDP</node>
-            <node x="" y="">reseau.couches.Couche</node>
-            <node x="" y="">reseau.test.TestReseau</node>
-            <node x="" y="">reseau.couches.Application7</node>
-            <node x="" y="">reseau.clientsServeurs.ServeurMaj</node>
-            <node x="" y="">reseau.adresses.Octet</node>
-            <node x="" y="">reseau.clientsServeurs.ClientNumerique</node>
-            <node x="" y="">reseau.couches.Reseau3</node>
-            <node x="" y="">reseau.adresses.AdresseMac</node>
-            <node x="" y="">reseau.couches.Ethernet</node>
-            <node x="" y="">reseau.tables.ARP</node>
-            <node x="" y="">reseau.couches.Liaison12</node>
-            <node x="" y="">reseau.couches.Transport4</node>
-            <node x="" y="">reseau.adresses.Adresse</node>
-            <node x="" y="">reseau.couches.IP</node>
-            <node x="" y="">reseau.clientsServeurs.ServeurFoisDeux</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9" x="223.77777777777777" y="236.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1007,18 +954,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Ethernet.java">
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Application7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="154">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Application7.java">
+    <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="353.0" y="389.5">reseau.couches.UDP</node>
+            <node x="410.0" y="0.0">reseau.couches.Couche</node>
+            <node x="395.0" y="746.0">reseau.test.TestReseau</node>
+            <node x="904.5" y="181.0">reseau.couches.Application7</node>
+            <node x="944.0" y="389.5">reseau.clientsServeurs.ServeurMaj</node>
+            <node x="218.0" y="525.0">reseau.adresses.Octet</node>
+            <node x="1079.0" y="389.5">reseau.clientsServeurs.ClientNumerique</node>
+            <node x="19.5" y="194.5">reseau.couches.Reseau3</node>
+            <node x="26.0" y="665.0">reseau.adresses.AdresseMac</node>
+            <node x="658.0" y="389.5">reseau.couches.Ethernet</node>
+            <node x="0.0" y="746.0">reseau.tables.ARP</node>
+            <node x="587.5" y="167.0">reseau.couches.Liaison12</node>
+            <node x="208.5" y="194.5">reseau.couches.Transport4</node>
+            <node x="0.0" y="525.0">reseau.adresses.Adresse</node>
+            <node x="0.0" y="335.0">reseau.couches.IP</node>
+            <node x="774.0" y="389.5">reseau.clientsServeurs.ServeurFoisDeux</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
+              <point x="0.0" y="-31.5" />
+              <point x="104.0" y="137.0" />
+              <point x="444.25" y="137.0" />
+              <point x="-102.75" y="58.5" />
+            </edge>
+            <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="59.0" />
+            </edge>
+            <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
+              <point x="0.0" y="-72.5" />
+              <point x="0.0" y="31.5" />
+            </edge>
+            <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
+              <point x="0.0" y="-45.0" />
+              <point x="1001.5" y="137.0" />
+              <point x="649.75" y="137.0" />
+              <point x="102.75" y="58.5" />
+            </edge>
+            <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
+              <point x="0.0" y="-59.0" />
+              <point x="706.0" y="147.0" />
+              <point x="581.25" y="147.0" />
+              <point x="34.25" y="58.5" />
+            </edge>
+            <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="31.5" />
+            </edge>
+            <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
+              <point x="0.0" y="-18.0" />
+              <point x="1155.5" y="310.0" />
+              <point x="1066.1666666666667" y="310.0" />
+              <point x="64.66666666666674" y="45.0" />
+            </edge>
+            <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
+              <point x="0.0" y="-31.5" />
+              <point x="388.0" y="147.0" />
+              <point x="512.75" y="147.0" />
+              <point x="-34.25" y="58.5" />
+            </edge>
+            <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
+              <point x="0.0" y="-18.0" />
+              <point x="849.0" y="310.0" />
+              <point x="936.8333333333333" y="310.0" />
+              <point x="-64.66666666666674" y="45.0" />
+            </edge>
+            <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9" x="-0.3333333333333144" y="-1173.3333333333333" />
+          <SelectedNodes>
+            <node>reseau.couches.Reseau3</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Ethernet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="396">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding />
         </state>
       </provider>
