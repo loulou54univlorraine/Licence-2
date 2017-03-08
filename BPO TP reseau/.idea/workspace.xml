@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="613dc3a5-a289-45e3-b35b-f55ad6cba5b0" name="Default" comment="Commit update qui marche pas&#10;a finir">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Ethernet.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Ethernet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Liaison12.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Liaison12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/couches/Ethernet.java" afterPath="$PROJECT_DIR$/src/reseau/couches/Ethernet.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../site ougverture pro.rar" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +25,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="TestReseau.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/test/TestReseau.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="1452">
               <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
               <folding>
                 <element signature="e#2713#2714#0" expanded="true" />
@@ -46,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/Ethernet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -57,105 +54,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
               <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arbre.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement />
-              <nodes>
-                <node x="353.0" y="389.5">reseau.couches.UDP</node>
-                <node x="410.0" y="0.0">reseau.couches.Couche</node>
-                <node x="395.0" y="746.0">reseau.test.TestReseau</node>
-                <node x="904.5" y="181.0">reseau.couches.Application7</node>
-                <node x="944.0" y="389.5">reseau.clientsServeurs.ServeurMaj</node>
-                <node x="218.0" y="525.0">reseau.adresses.Octet</node>
-                <node x="1079.0" y="389.5">reseau.clientsServeurs.ClientNumerique</node>
-                <node x="19.5" y="194.5">reseau.couches.Reseau3</node>
-                <node x="26.0" y="665.0">reseau.adresses.AdresseMac</node>
-                <node x="658.0" y="389.5">reseau.couches.Ethernet</node>
-                <node x="0.0" y="746.0">reseau.tables.ARP</node>
-                <node x="587.5" y="167.0">reseau.couches.Liaison12</node>
-                <node x="208.5" y="194.5">reseau.couches.Transport4</node>
-                <node x="0.0" y="525.0">reseau.adresses.Adresse</node>
-                <node x="0.0" y="335.0">reseau.couches.IP</node>
-                <node x="774.0" y="389.5">reseau.clientsServeurs.ServeurFoisDeux</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
-                  <point x="0.0" y="-18.0" />
-                  <point x="0.0" y="45.0" />
-                </edge>
-                <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
-                  <point x="0.0" y="-31.5" />
-                  <point x="104.0" y="137.0" />
-                  <point x="444.25" y="137.0" />
-                  <point x="-102.75" y="58.5" />
-                </edge>
-                <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
-                  <point x="0.0" y="-18.0" />
-                  <point x="0.0" y="59.0" />
-                </edge>
-                <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
-                  <point x="0.0" y="-72.5" />
-                  <point x="0.0" y="31.5" />
-                </edge>
-                <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
-                  <point x="0.0" y="-45.0" />
-                  <point x="1001.5" y="137.0" />
-                  <point x="649.75" y="137.0" />
-                  <point x="102.75" y="58.5" />
-                </edge>
-                <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
-                  <point x="0.0" y="-59.0" />
-                  <point x="706.0" y="147.0" />
-                  <point x="581.25" y="147.0" />
-                  <point x="34.25" y="58.5" />
-                </edge>
-                <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
-                  <point x="0.0" y="-18.0" />
-                  <point x="0.0" y="31.5" />
-                </edge>
-                <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
-                  <point x="0.0" y="-18.0" />
-                  <point x="1155.5" y="310.0" />
-                  <point x="1066.1666666666667" y="310.0" />
-                  <point x="64.66666666666674" y="45.0" />
-                </edge>
-                <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
-                  <point x="0.0" y="-31.5" />
-                  <point x="388.0" y="147.0" />
-                  <point x="512.75" y="147.0" />
-                  <point x="-34.25" y="58.5" />
-                </edge>
-                <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
-                  <point x="0.0" y="-18.0" />
-                  <point x="849.0" y="310.0" />
-                  <point x="936.8333333333333" y="310.0" />
-                  <point x="-64.66666666666674" y="45.0" />
-                </edge>
-                <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
-                  <point x="0.0" y="-18.0" />
-                  <point x="0.0" y="45.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.9" x="-0.3333333333333144" y="-1173.3333333333333" />
-              <SelectedNodes>
-                <node>reseau.couches.Reseau3</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Inner Classes</Category>
-                <Category>Properties</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#338#339#0" expanded="false" />
+                <element signature="e#371#372#0" expanded="false" />
+                <element signature="e#403#404#0" expanded="false" />
+                <element signature="e#436#437#0" expanded="false" />
+                <element signature="e#1468#1469#0" expanded="false" />
+                <element signature="e#1499#1500#0" expanded="false" />
+                <element signature="e#1549#1550#0" expanded="false" />
+                <element signature="e#1580#1581#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,7 +72,7 @@
       <file leaf-file-name="IP.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/IP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
+            <state relative-caret-position="1518">
               <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
@@ -173,9 +82,21 @@
       <file leaf-file-name="Adresse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/adresses/Adresse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2833">
+            <state relative-caret-position="132">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2374#2375#0" expanded="false" />
+                <element signature="e#2421#2422#0" expanded="false" />
+                <element signature="e#2455#2456#0" expanded="false" />
+                <element signature="e#2493#2494#0" expanded="false" />
+                <element signature="e#3191#3192#0" expanded="false" />
+                <element signature="e#3222#3223#0" expanded="false" />
+                <element signature="e#3560#3561#0" expanded="false" />
+                <element signature="e#3617#3618#0" expanded="false" />
+                <element signature="e#3646#3647#0" expanded="false" />
+                <element signature="e#3691#3692#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,13 +104,9 @@
       <file leaf-file-name="ReseauLocal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/ReseauLocal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="330">
               <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,12 +114,11 @@
       <file leaf-file-name="Liaison12.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/Liaison12.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="false" />
+                <element signature="e#561#562#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -211,8 +127,8 @@
       <file leaf-file-name="Transport4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/Transport4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="462">
+              <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -290,7 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,8 +221,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -574,6 +490,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -695,6 +612,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -733,6 +656,7 @@
       <workItem from="1488649273123" duration="9000" />
       <workItem from="1488801464662" duration="60000" />
       <workItem from="1488812908214" duration="10549000" />
+      <workItem from="1488972938204" duration="159000" />
     </task>
     <task id="LOCAL-00001" summary="test commit intellij">
       <created>1488646125475</created>
@@ -766,7 +690,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11470000" />
+    <option name="totallyTimeSpent" value="11629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -775,7 +699,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,9 +710,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16487648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1670247" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -800,7 +722,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -845,11 +769,110 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/reseau/test/TestReseau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+          <folding>
+            <element signature="e#2713#2714#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Ethernet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Application7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#371#372#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#436#437#0" expanded="false" />
+            <element signature="e#1468#1469#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1549#1550#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/IP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/adresses/Adresse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+            <element signature="e#2421#2422#0" expanded="false" />
+            <element signature="e#2455#2456#0" expanded="false" />
+            <element signature="e#2493#2494#0" expanded="false" />
+            <element signature="e#3191#3192#0" expanded="false" />
+            <element signature="e#3222#3223#0" expanded="false" />
+            <element signature="e#3560#3561#0" expanded="false" />
+            <element signature="e#3617#3618#0" expanded="false" />
+            <element signature="e#3646#3647#0" expanded="false" />
+            <element signature="e#3691#3692#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/ReseauLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Liaison12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#529#530#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/couches/Transport4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/clientsServeurs/ServeurFoisDeux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/adresses/AdresseMac.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,37 +905,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/ReseauLocal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="330">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/couches/Liaison12.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="594">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="false" />
+            <element signature="e#561#562#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/couches/IP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
+        <state relative-caret-position="1518">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
@@ -921,16 +937,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/adresses/Adresse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2833">
+        <state relative-caret-position="132">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2374#2375#0" expanded="false" />
+            <element signature="e#2421#2422#0" expanded="false" />
+            <element signature="e#2455#2456#0" expanded="false" />
+            <element signature="e#2493#2494#0" expanded="false" />
+            <element signature="e#3191#3192#0" expanded="false" />
+            <element signature="e#3222#3223#0" expanded="false" />
+            <element signature="e#3560#3561#0" expanded="false" />
+            <element signature="e#3617#3618#0" expanded="false" />
+            <element signature="e#3646#3647#0" expanded="false" />
+            <element signature="e#3691#3692#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/couches/Transport4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="462">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -945,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/test/TestReseau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="1452">
           <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
           <folding>
             <element signature="e#2713#2714#0" expanded="true" />
@@ -958,7 +986,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#371#372#0" expanded="false" />
+            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#436#437#0" expanded="false" />
+            <element signature="e#1468#1469#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1549#1550#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1044,7 +1082,7 @@
               <point x="0.0" y="45.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.9" x="-0.3333333333333144" y="-1173.3333333333333" />
+          <settings layout="Hierarchic Group" zoom="0.9" x="0.0" y="-1173.0" />
           <SelectedNodes>
             <node>reseau.couches.Reseau3</node>
           </SelectedNodes>
@@ -1061,7 +1099,7 @@
     <entry file="file://$PROJECT_DIR$/src/reseau/couches/Ethernet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding />
         </state>
       </provider>
