@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="613dc3a5-a289-45e3-b35b-f55ad6cba5b0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/clientsServeurs/ClientNumerique.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/clientsServeurs/ServeurMaj.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/Machine.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/Machine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/clientsServeurs/ServeurFoisDeux.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/clientsServeurs/ServeurFoisDeux.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Application7.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/couches/Application7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/test/TestReseau.class" afterPath="$PROJECT_DIR$/out/production/BPO TP reseau/reseau/test/TestReseau.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/clientsServeurs/ClientDNS.java" afterPath="$PROJECT_DIR$/src/reseau/clientsServeurs/ClientDNS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/couches/Application7.java" afterPath="$PROJECT_DIR$/src/reseau/couches/Application7.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reseau/test/TestReseau.java" afterPath="$PROJECT_DIR$/src/reseau/test/TestReseau.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,12 +26,126 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TestReseau.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestReseau.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/test/TestReseau.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
+            <state relative-caret-position="521">
               <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arbre.uml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="590.5" y="389.5">reseau.couches.UDP</node>
+                <node x="0.0" y="958.0">reseau.ReseauLocal</node>
+                <node x="301.0" y="958.0">reseau.Message</node>
+                <node x="835.2884615384615" y="362.5">reseau.clientsServeurs.ClientDNS</node>
+                <node x="356.28846153846155" y="0.0">reseau.couches.Couche</node>
+                <node x="0.0" y="525.0">reseau.Machine</node>
+                <node x="547.0" y="958.0">reseau.test.TestReseau</node>
+                <node x="955.2884615384615" y="167.0">reseau.couches.Application7</node>
+                <node x="395.0" y="823.0">reseau.tables.DNS</node>
+                <node x="690.2884615384615" y="376.0">reseau.clientsServeurs.ServeurGetIP</node>
+                <node x="1017.2884615384615" y="389.5">reseau.clientsServeurs.ServeurMaj</node>
+                <node x="539.0" y="525.0">reseau.adresses.Octet</node>
+                <node x="1322.2884615384614" y="389.5">reseau.clientsServeurs.ClientNumerique</node>
+                <node x="257.0" y="194.5">reseau.couches.Reseau3</node>
+                <node x="70.5" y="389.5">reseau.couches.Ethernet</node>
+                <node x="347.0" y="665.0">reseau.adresses.AdresseMac</node>
+                <node x="0.0" y="823.0">reseau.tables.ARP</node>
+                <node x="0.0" y="167.0">reseau.couches.Liaison12</node>
+                <node x="321.0" y="525.0">reseau.adresses.Adresse</node>
+                <node x="446.0" y="194.5">reseau.couches.Transport4</node>
+                <node x="1152.2884615384614" y="389.5">reseau.clientsServeurs.ServeurFoisDeux</node>
+                <node x="237.5" y="335.0">reseau.couches.IP</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="reseau.clientsServeurs.ClientDNS" target="reseau.couches.Application7">
+                  <point x="0.0" y="-45.0" />
+                  <point x="916.2884615384615" y="315.0" />
+                  <point x="1026.9884615384617" y="315.0" />
+                  <point x="-47.799999999999955" y="59.0" />
+                </edge>
+                <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
+                  <point x="-1.1368683772161603E-13" y="-59.0" />
+                  <point x="1074.7884615384614" y="137.0" />
+                  <point x="596.0384615384615" y="137.0" />
+                  <point x="102.75" y="58.5" />
+                </edge>
+                <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="31.5" />
+                </edge>
+                <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
+                  <point x="0.0" y="-18.0" />
+                  <point x="1398.7884615384614" y="305.0" />
+                  <point x="1170.3884615384616" y="305.0" />
+                  <point x="95.60000000000002" y="59.0" />
+                </edge>
+                <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
+                  <point x="0.0" y="-31.5" />
+                  <point x="625.5" y="147.0" />
+                  <point x="527.5384615384615" y="147.0" />
+                  <point x="34.25" y="58.5" />
+                </edge>
+                <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
+                  <point x="0.0" y="-18.0" />
+                  <point x="1227.2884615384614" y="315.0" />
+                  <point x="1122.5884615384616" y="315.0" />
+                  <point x="47.80000000000007" y="59.0" />
+                </edge>
+                <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="59.0" />
+                </edge>
+                <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
+                  <point x="0.0" y="-31.5" />
+                  <point x="341.5" y="147.0" />
+                  <point x="459.03846153846155" y="147.0" />
+                  <point x="-34.25" y="58.5" />
+                </edge>
+                <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="59.0" />
+                </edge>
+                <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
+                  <point x="0.0" y="-72.5" />
+                  <point x="0.0" y="31.5" />
+                </edge>
+                <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
+                  <point x="0.0" y="-59.0" />
+                  <point x="118.5" y="137.0" />
+                  <point x="390.53846153846155" y="137.0" />
+                  <point x="-102.75" y="58.5" />
+                </edge>
+                <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
+                  <point x="0.0" y="-18.0" />
+                  <point x="0.0" y="45.0" />
+                </edge>
+                <edge source="reseau.clientsServeurs.ServeurGetIP" target="reseau.couches.Application7">
+                  <point x="0.0" y="-31.5" />
+                  <point x="752.7884615384615" y="305.0" />
+                  <point x="979.1884615384615" y="305.0" />
+                  <point x="-95.60000000000002" y="59.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9" x="659.2222222222222" y="629.5555555555555" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Inner Classes</Category>
+                <Category>Properties</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -82,18 +187,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServeurMaj.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reseau/clientsServeurs/ServeurMaj.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClientNumerique.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reseau/clientsServeurs/ClientNumerique.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,11 +217,11 @@
         <entry file="file://$PROJECT_DIR$/src/reseau/couches/Application7.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
-              <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+              <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2045#2046#0" expanded="true" />
-                <element signature="e#2094#2095#0" expanded="true" />
+                <element signature="e#2059#2060#0" expanded="true" />
+                <element signature="e#2108#2109#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -814,7 +907,7 @@
       <workItem from="1488812908214" duration="10549000" />
       <workItem from="1488972938204" duration="159000" />
       <workItem from="1489050246862" duration="7763000" />
-      <workItem from="1489064780196" duration="3900000" />
+      <workItem from="1489064780196" duration="4318000" />
     </task>
     <task id="LOCAL-00001" summary="test commit intellij">
       <created>1488646125475</created>
@@ -865,11 +958,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489057989560</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit update avec DNS">
+      <created>1489068710813</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1489068710813</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23292000" />
+    <option name="totallyTimeSpent" value="23710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -884,8 +984,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.9823529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9823529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1048,8 +1148,8 @@
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1076,8 +1176,8 @@
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,8 +1280,8 @@
           <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1307,102 +1407,6 @@
             <element signature="e#560#561#0" expanded="false" />
             <element signature="e#604#605#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="353.0" y="389.5">reseau.couches.UDP</node>
-            <node x="410.0" y="0.0">reseau.couches.Couche</node>
-            <node x="395.0" y="746.0">reseau.test.TestReseau</node>
-            <node x="904.5" y="181.0">reseau.couches.Application7</node>
-            <node x="944.0" y="389.5">reseau.clientsServeurs.ServeurMaj</node>
-            <node x="218.0" y="525.0">reseau.adresses.Octet</node>
-            <node x="1079.0" y="389.5">reseau.clientsServeurs.ClientNumerique</node>
-            <node x="19.5" y="194.5">reseau.couches.Reseau3</node>
-            <node x="26.0" y="665.0">reseau.adresses.AdresseMac</node>
-            <node x="658.0" y="389.5">reseau.couches.Ethernet</node>
-            <node x="0.0" y="746.0">reseau.tables.ARP</node>
-            <node x="587.5" y="167.0">reseau.couches.Liaison12</node>
-            <node x="208.5" y="194.5">reseau.couches.Transport4</node>
-            <node x="0.0" y="525.0">reseau.adresses.Adresse</node>
-            <node x="0.0" y="335.0">reseau.couches.IP</node>
-            <node x="774.0" y="389.5">reseau.clientsServeurs.ServeurFoisDeux</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
-              <point x="0.0" y="-18.0" />
-              <point x="0.0" y="45.0" />
-            </edge>
-            <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
-              <point x="0.0" y="-31.5" />
-              <point x="104.0" y="137.0" />
-              <point x="444.25" y="137.0" />
-              <point x="-102.75" y="58.5" />
-            </edge>
-            <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
-              <point x="0.0" y="-18.0" />
-              <point x="0.0" y="59.0" />
-            </edge>
-            <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
-              <point x="0.0" y="-72.5" />
-              <point x="0.0" y="31.5" />
-            </edge>
-            <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
-              <point x="0.0" y="-45.0" />
-              <point x="1001.5" y="137.0" />
-              <point x="649.75" y="137.0" />
-              <point x="102.75" y="58.5" />
-            </edge>
-            <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
-              <point x="0.0" y="-59.0" />
-              <point x="706.0" y="147.0" />
-              <point x="581.25" y="147.0" />
-              <point x="34.25" y="58.5" />
-            </edge>
-            <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
-              <point x="0.0" y="-18.0" />
-              <point x="0.0" y="31.5" />
-            </edge>
-            <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
-              <point x="0.0" y="-18.0" />
-              <point x="1155.5" y="310.0" />
-              <point x="1066.1666666666667" y="310.0" />
-              <point x="64.66666666666674" y="45.0" />
-            </edge>
-            <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
-              <point x="0.0" y="-31.5" />
-              <point x="388.0" y="147.0" />
-              <point x="512.75" y="147.0" />
-              <point x="-34.25" y="58.5" />
-            </edge>
-            <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
-              <point x="0.0" y="-18.0" />
-              <point x="849.0" y="310.0" />
-              <point x="936.8333333333333" y="310.0" />
-              <point x="-64.66666666666674" y="45.0" />
-            </edge>
-            <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
-              <point x="0.0" y="-18.0" />
-              <point x="0.0" y="45.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.9" x="0.0" y="-1173.0" />
-          <SelectedNodes>
-            <node>reseau.couches.Reseau3</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1552,20 +1556,132 @@
     <entry file="file://$PROJECT_DIR$/src/reseau/couches/Application7.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
-          <caret line="42" column="51" lean-forward="false" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reseau/test/TestReseau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="521">
           <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reseau/arbre.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="590.5" y="389.5">reseau.couches.UDP</node>
+            <node x="0.0" y="958.0">reseau.ReseauLocal</node>
+            <node x="301.0" y="958.0">reseau.Message</node>
+            <node x="835.2884615384615" y="362.5">reseau.clientsServeurs.ClientDNS</node>
+            <node x="356.28846153846155" y="0.0">reseau.couches.Couche</node>
+            <node x="0.0" y="525.0">reseau.Machine</node>
+            <node x="547.0" y="958.0">reseau.test.TestReseau</node>
+            <node x="955.2884615384615" y="167.0">reseau.couches.Application7</node>
+            <node x="395.0" y="823.0">reseau.tables.DNS</node>
+            <node x="690.2884615384615" y="376.0">reseau.clientsServeurs.ServeurGetIP</node>
+            <node x="1017.2884615384615" y="389.5">reseau.clientsServeurs.ServeurMaj</node>
+            <node x="539.0" y="525.0">reseau.adresses.Octet</node>
+            <node x="1322.2884615384614" y="389.5">reseau.clientsServeurs.ClientNumerique</node>
+            <node x="257.0" y="194.5">reseau.couches.Reseau3</node>
+            <node x="70.5" y="389.5">reseau.couches.Ethernet</node>
+            <node x="347.0" y="665.0">reseau.adresses.AdresseMac</node>
+            <node x="0.0" y="823.0">reseau.tables.ARP</node>
+            <node x="0.0" y="167.0">reseau.couches.Liaison12</node>
+            <node x="321.0" y="525.0">reseau.adresses.Adresse</node>
+            <node x="446.0" y="194.5">reseau.couches.Transport4</node>
+            <node x="1152.2884615384614" y="389.5">reseau.clientsServeurs.ServeurFoisDeux</node>
+            <node x="237.5" y="335.0">reseau.couches.IP</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="reseau.clientsServeurs.ClientDNS" target="reseau.couches.Application7">
+              <point x="0.0" y="-45.0" />
+              <point x="916.2884615384615" y="315.0" />
+              <point x="1026.9884615384617" y="315.0" />
+              <point x="-47.799999999999955" y="59.0" />
+            </edge>
+            <edge source="reseau.couches.Application7" target="reseau.couches.Couche">
+              <point x="-1.1368683772161603E-13" y="-59.0" />
+              <point x="1074.7884615384614" y="137.0" />
+              <point x="596.0384615384615" y="137.0" />
+              <point x="102.75" y="58.5" />
+            </edge>
+            <edge source="reseau.couches.UDP" target="reseau.couches.Transport4">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="31.5" />
+            </edge>
+            <edge source="reseau.clientsServeurs.ClientNumerique" target="reseau.couches.Application7">
+              <point x="0.0" y="-18.0" />
+              <point x="1398.7884615384614" y="305.0" />
+              <point x="1170.3884615384616" y="305.0" />
+              <point x="95.60000000000002" y="59.0" />
+            </edge>
+            <edge source="reseau.couches.Transport4" target="reseau.couches.Couche">
+              <point x="0.0" y="-31.5" />
+              <point x="625.5" y="147.0" />
+              <point x="527.5384615384615" y="147.0" />
+              <point x="34.25" y="58.5" />
+            </edge>
+            <edge source="reseau.clientsServeurs.ServeurFoisDeux" target="reseau.couches.Application7">
+              <point x="0.0" y="-18.0" />
+              <point x="1227.2884615384614" y="315.0" />
+              <point x="1122.5884615384616" y="315.0" />
+              <point x="47.80000000000007" y="59.0" />
+            </edge>
+            <edge source="reseau.clientsServeurs.ServeurMaj" target="reseau.couches.Application7">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="59.0" />
+            </edge>
+            <edge source="reseau.couches.Reseau3" target="reseau.couches.Couche">
+              <point x="0.0" y="-31.5" />
+              <point x="341.5" y="147.0" />
+              <point x="459.03846153846155" y="147.0" />
+              <point x="-34.25" y="58.5" />
+            </edge>
+            <edge source="reseau.couches.Ethernet" target="reseau.couches.Liaison12">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="59.0" />
+            </edge>
+            <edge source="reseau.couches.IP" target="reseau.couches.Reseau3">
+              <point x="0.0" y="-72.5" />
+              <point x="0.0" y="31.5" />
+            </edge>
+            <edge source="reseau.couches.Liaison12" target="reseau.couches.Couche">
+              <point x="0.0" y="-59.0" />
+              <point x="118.5" y="137.0" />
+              <point x="390.53846153846155" y="137.0" />
+              <point x="-102.75" y="58.5" />
+            </edge>
+            <edge source="reseau.adresses.AdresseMac" target="reseau.adresses.Adresse">
+              <point x="0.0" y="-18.0" />
+              <point x="0.0" y="45.0" />
+            </edge>
+            <edge source="reseau.clientsServeurs.ServeurGetIP" target="reseau.couches.Application7">
+              <point x="0.0" y="-31.5" />
+              <point x="752.7884615384615" y="305.0" />
+              <point x="979.1884615384615" y="305.0" />
+              <point x="-95.60000000000002" y="59.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9" x="659.2222222222222" y="629.5555555555555" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
