@@ -19,6 +19,7 @@ public class ReseauLocal {
 
     public void ajouter(Machine m) {
         reseaux.add(m.getCoucheLiaison12());
+        m.setReseau(this);
 
     }
 

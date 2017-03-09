@@ -1,5 +1,6 @@
 package reseau.clientsServeurs;
 
+import reseau.Machine;
 import reseau.couches.Application7;
 import reseau.Message;
 
@@ -11,8 +12,8 @@ public class ServeurFoisDeux extends Application7 {
     /**
      * @param port le port dans la couche transport
      */
-    public ServeurFoisDeux(int port) {
-        super(port);
+    public ServeurFoisDeux(int port, Machine m) {
+        super(port, m);
     }
 
     /**

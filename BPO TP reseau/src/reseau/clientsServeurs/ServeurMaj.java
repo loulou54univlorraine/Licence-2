@@ -1,5 +1,6 @@
 package reseau.clientsServeurs;
 
+import reseau.Machine;
 import reseau.Message;
 import reseau.couches.Application7;
 
@@ -12,8 +13,8 @@ public class ServeurMaj extends Application7{
     /**
      * @param port le port dans la couche transport
      */
-    public ServeurMaj(int port) {
-        super(port);
+    public ServeurMaj(int port, Machine m) {
+        super(port, m);
     }
 
     /**

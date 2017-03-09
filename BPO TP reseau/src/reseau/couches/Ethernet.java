@@ -36,7 +36,7 @@ public class Ethernet extends Liaison12 {
         AdresseMac adr=message.extraireAdresseMac();
         if(adrMac.toString().equals(adr.toString())){
             // Afficher une trace de la reception
-            System.out.println("Le message ets pour ma gueule");
+            System.out.println("Le message est pour ma gueule");
             message.supprimer(12);
             System.out.println("Je suis "+getNom()+" et je passse "+message.size()+" octets reçus : " +message);
             ((Reseau3) plusUn).receiveMessage(message);
