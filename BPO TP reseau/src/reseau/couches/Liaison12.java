@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author martine
  */
 public abstract class Liaison12 extends Couche {
-    protected  AdresseMac adrMac;
+    protected AdresseMac adrMac;
     protected ReseauLocal r;
 
     protected Liaison12 voisin ;

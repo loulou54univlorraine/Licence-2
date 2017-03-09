@@ -10,8 +10,8 @@ import reseau.adresses.Adresse;
  */
 public class ClientNumerique extends Application7 {
 
-    public ClientNumerique(int port, Machine m) {
-        super(port, m);
+    public ClientNumerique(int port, Machine m, ClientDNS clientDNS) {
+        super(port, m, clientDNS);
     }
    
     /**

@@ -14,8 +14,8 @@ public class ServeurGetIP extends Application7 {
     /**
      * @param port le port dans la couche transport
      */
-    public ServeurGetIP(int port, Machine m, DNS dns) {
-        super(port, m);
+    public ServeurGetIP(int port, Machine m, DNS dns, ClientDNS clientDNS) {
+        super(port, m, clientDNS);
         this.dns = dns;
     }
 

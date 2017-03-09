@@ -13,8 +13,8 @@ public class ServeurMaj extends Application7{
     /**
      * @param port le port dans la couche transport
      */
-    public ServeurMaj(int port, Machine m) {
-        super(port, m);
+    public ServeurMaj(int port, Machine m, ClientDNS clientDNS) {
+        super(port, m, clientDNS);
     }
 
     /**

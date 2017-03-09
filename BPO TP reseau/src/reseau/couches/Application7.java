@@ -3,6 +3,7 @@ package reseau.couches;
 import reseau.Machine;
 import reseau.Message;
 import reseau.adresses.Adresse;
+import reseau.clientsServeurs.ClientDNS;
 
 /**
  * @author martine
@@ -12,14 +13,16 @@ public abstract class Application7 extends Couche {
     protected int port ;
     protected Message resultat ;                   // destiné à contenir le résutat de la requête au serveur
     protected Machine machine;
+    private ClientDNS appliDNS;
 
-    public Application7(int port) {
+    public Application7() {
         this.port = port ;
     }
 
-    public Application7(int port, Machine m) {
+    public Application7(int port, Machine m, ClientDNS clientDNS) {
         this.port = port;
         m.ajouter(port, this);
+        appliDNS = clientDNS;
 
     }
     

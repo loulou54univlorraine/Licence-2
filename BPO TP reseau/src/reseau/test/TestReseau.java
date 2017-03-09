@@ -13,14 +13,27 @@ public class TestReseau {
 
     public TestReseau() {
 
-        String nom,nomServ,nomServ2;
-        Adresse adr,adrServ,adrServ2;
-        AdresseMac adrm,adrmServ,adrmServ2;
-        Adresse masque, masqueServ, masqueServ2;
+        String nom, nomServ, nomservDNS;
+        Adresse adr, adrServ, adrservDNS;
+        AdresseMac adrm, adrmServ, adrmservDNS;
+        Adresse masque, masqueServ, masqueservDNS;
 
         //---------------------------------
         DNS dns = new DNS();
         ReseauLocal r = new ReseauLocal();
+
+
+        //---------------------------------
+        // Une machine DNS
+        nomservDNS = "Zabadie";
+        adrservDNS = new Adresse("192.23.89.41");
+        adrmservDNS = new AdresseMac("AA.CD.EF.00.AA.54");
+        masqueservDNS = new Adresse("255.255.0.0");
+        int portservDNS = 900;
+        int portClientDns = 666;
+        Machine m3 = new Machine(nomservDNS, adrservDNS, adrmservDNS, masqueservDNS);
+        ClientDNS clientDNS = new ClientDNS(portClientDns, m3, adrservDNS, portservDNS);
+        Application7 appliServeurGetIP = new ServeurGetIP(portservDNS, m3, dns, clientDNS);
 
         //---------------------------------
         // Une machine
@@ -30,7 +43,7 @@ public class TestReseau {
         masque = new Adresse("255.255.0.0");
         int portNum = 45;
         Machine m1 = new Machine(nom, adr, adrm, masque);
-        Application7 appliClientNum = new ClientNumerique(portNum, m1);
+        Application7 appliClientNum = new ClientNumerique(portNum, m1, clientDNS);
         //---------------------------------
         // Une autre machine
         nomServ = "Pollux";
@@ -40,19 +53,10 @@ public class TestReseau {
         int portFoisDeux = 888;
         int portMaj = 889;
         Machine m2 = new Machine(nomServ, adrServ, adrmServ, masqueServ);
-        Application7 appliServeurFoisDeux = new ServeurFoisDeux(portFoisDeux, m2);
-        Application7 appliServeurMaj = new ServeurMaj(portMaj, m2);
+        Application7 appliServeurFoisDeux = new ServeurFoisDeux(portFoisDeux, m2, clientDNS);
+        Application7 appliServeurMaj = new ServeurMaj(portMaj, m2, clientDNS);
 
-        //---------------------------------
-        // Une autre machine
 
-        nomServ2 = "Zabadie";
-        adrServ2 = new Adresse("192.23.89.41");
-        adrmServ2 = new AdresseMac("AA.CD.EF.00.AA.54");
-        masqueServ2 = new Adresse("255.255.0.0");
-        int portServGetIp = 900;
-        Machine m3 = new Machine(nomServ2, adrServ2, adrmServ2, masqueServ2);
-        Application7 appliServeurGetIP = new ServeurGetIP(900, m3, dns);
 
 
         // ajout reseau
@@ -62,7 +66,7 @@ public class TestReseau {
         r.ajouter(m3);
         dns.ajouter(nom, adr);
         dns.ajouter(nomServ, adrServ);
-        dns.ajouter(nomServ2, adrServ2);
+        dns.ajouter(nomservDNS, adrservDNS);
         //---------------------------------
 
 
@@ -80,6 +84,7 @@ public class TestReseau {
         appliClientNum.sendMessage(dest, portFoisDeux, mess) ;
         res = appliClientNum.getResultat() ;
         System.out.println("Et j'obtiens "+res.extraireEntier(0));
+        System.out.println("------------------------------------------------------------");
         //---------------------------------
         // Envoi d'un message pour Maj
         System.out.println("envoie d'un message pour mettre en maj:\n");
@@ -90,16 +95,18 @@ public class TestReseau {
         appliClientNum.sendMessage(dest2, portMaj, mess2) ;
         res = appliClientNum.getResultat() ;
         System.out.println("Et j'obtiens "+res.extraireChaine());
+        System.out.println("------------------------------------------------------------");
 
         // Envoi d'un message pour getIP
-        System.out.println("envoie d'un message pour récupérer l'iP:\n");
+        System.out.println("\nenvoie d'un message pour récupérer l'iP:\n");
         valeur3 = new String("Pollux");
         mess3 = new Message(valeur3);
         dest3 = new Adresse("192.23.89.41");
         System.out.println("Je voudrais l'ip de  " + valeur3);
-        appliClientNum.sendMessage(dest3, portServGetIp, mess3);
+        appliClientNum.sendMessage(dest3, portservDNS, mess3);
         res = appliClientNum.getResultat();
-        System.out.println("Et j'obtiens " + res.extraireAdresse(4));
+        System.out.println("Et j'obtiens " + res.extraireAdresse(4) + "\n\n");
+        System.out.println("------------------------------------------------------------");
 
 
     }

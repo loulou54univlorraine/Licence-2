@@ -2,7 +2,9 @@ package reseau;
 
 import reseau.adresses.Adresse;
 import reseau.adresses.AdresseMac;
+import reseau.clientsServeurs.ClientDNS;
 import reseau.couches.*;
+
 
 import java.util.ArrayList;
 
@@ -28,6 +30,7 @@ public class Machine {
         this.ethernet = new Ethernet(adrMac);
         this.ip = new IP(adrIP, masque);
         this.udp = new UDP();
+
         udp.setCoucheInferieure(ip);
         ip.setCouches(udp, ethernet);
         ethernet.setCoucheSuperieure(ip);
@@ -47,4 +50,6 @@ public class Machine {
     public void setReseau(ReseauLocal rl) {
         ethernet.setReseau(rl);
     }
+
+
 }

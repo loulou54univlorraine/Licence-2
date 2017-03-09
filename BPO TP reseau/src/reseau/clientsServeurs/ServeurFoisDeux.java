@@ -12,8 +12,8 @@ public class ServeurFoisDeux extends Application7 {
     /**
      * @param port le port dans la couche transport
      */
-    public ServeurFoisDeux(int port, Machine m) {
-        super(port, m);
+    public ServeurFoisDeux(int port, Machine m, ClientDNS clientDNS) {
+        super(port, m, clientDNS);
     }
 
     /**
