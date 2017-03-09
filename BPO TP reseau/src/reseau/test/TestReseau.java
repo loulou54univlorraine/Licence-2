@@ -44,6 +44,7 @@ public class TestReseau {
         int portNum = 45;
         Machine m1 = new Machine(nom, adr, adrm, masque);
         Application7 appliClientNum = new ClientNumerique(portNum, m1, clientDNS);
+
         //---------------------------------
         // Une autre machine
         nomServ = "Pollux";
@@ -72,14 +73,14 @@ public class TestReseau {
 
         int valeur;
         Message mess, mess2, mess3, res;
-        Adresse dest, dest2, dest3;
+        String dest, dest2, dest3;
         String mot;
         String valeur2, valeur3;
 
         // Envoi d'un message pour *2
         valeur = 10;
         mess = new Message(valeur) ;
-        dest = new Adresse("192.23.12.12");
+        dest = "Pollux";
         System.out.println("Je voudrais le *2 de l'entier "+valeur);
         appliClientNum.sendMessage(dest, portFoisDeux, mess) ;
         res = appliClientNum.getResultat() ;
@@ -90,7 +91,7 @@ public class TestReseau {
         System.out.println("envoie d'un message pour mettre en maj:\n");
         valeur2 = new String("abcdefghijklmnopqrstuvwxyz");
         mess2 = new Message(valeur2);
-        dest2 = new Adresse("192.23.12.12");
+        dest2 = "Pollux";
         System.out.println("Je voudrais  " + valeur2 + " en majuscule");
         appliClientNum.sendMessage(dest2, portMaj, mess2) ;
         res = appliClientNum.getResultat() ;
@@ -101,7 +102,7 @@ public class TestReseau {
         System.out.println("\nenvoie d'un message pour récupérer l'iP:\n");
         valeur3 = new String("Pollux");
         mess3 = new Message(valeur3);
-        dest3 = new Adresse("192.23.89.41");
+        dest3 = "Zabadie";
         System.out.println("Je voudrais l'ip de  " + valeur3);
         appliClientNum.sendMessage(dest3, portservDNS, mess3);
         res = appliClientNum.getResultat();

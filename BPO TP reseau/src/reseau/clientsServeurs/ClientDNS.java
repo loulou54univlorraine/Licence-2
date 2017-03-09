@@ -14,10 +14,11 @@ public class ClientDNS extends Application7 {
     private Adresse adresseDNS;
 
     public ClientDNS(int port, Machine m, Adresse adresseDNS, int portDNS) {
-        super();
-
+        this.port = port;
+        m.ajouter(port, this);
         this.portDNS = portDNS;
         this.adresseDNS = adresseDNS;
+
     }
 
     public void receiveMessage(Adresse source, int portSource, Message message) {
