@@ -25,9 +25,7 @@ public class TestReseau {
         masque = new Adresse("255.255.0.0");
         int portNum = 45;
         Machine m1 = new Machine(nom, adr, adrm, masque);
-        Application7 appliClientNum = new ClientNumerique(portNum);
-        m1.ajouter(portNum, appliClientNum);
-
+        Application7 appliClientNum = new ClientNumerique(portNum, m1);
         //---------------------------------
         // Une autre machine
         nomServ = "dionysos" ;
@@ -43,6 +41,8 @@ public class TestReseau {
         ReseauLocal r = new ReseauLocal();
         r.ajouter(m1);
         r.ajouter(m2);
+        m1.setReseau(r);
+        m2.setReseau(r);
         m2.ajouter(portFoisDeux, appliServeurFoisDeux);
         Application7 appliServeurMaj = new ServeurMaj(portMaj);
         m2.ajouter(portMaj, appliServeurMaj);

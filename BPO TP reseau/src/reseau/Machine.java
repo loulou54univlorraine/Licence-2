@@ -43,4 +43,8 @@ public class Machine {
         return ethernet;
 
     }
+
+    public void setReseau(ReseauLocal rl) {
+        ethernet.setReseau(rl);
+    }
 }

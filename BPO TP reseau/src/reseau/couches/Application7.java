@@ -1,5 +1,6 @@
 package reseau.couches;
 
+import reseau.Machine;
 import reseau.Message;
 import reseau.adresses.Adresse;
 
@@ -10,13 +11,21 @@ public abstract class Application7 extends Couche {
     
     protected int port ;
     protected Message resultat ;                   // destiné à contenir le résutat de la requête au serveur
-    
+    protected Machine machine;
+
     public Application7(int port) {
         this.port = port ;
+    }
+
+    public Application7(int port, Machine m) {
+        this.port = port;
+        m.ajouter(port, this);
+
     }
     
     public int getPort() {
         return this.port ;
+
     }
 
     /**
@@ -31,8 +40,8 @@ public abstract class Application7 extends Couche {
         System.out.println("Je suis "+getNom()+" et j'envoie "+message.size()+" octets : " +message);
         // Transmettre à la couche Transport
         ((Transport4)moinsUn).sendMessage(port, dest, portDest, message);
-    }      
-        
+    }
+
     /**
      * Je reçois un message de la couche inférieure 
      * @param source adresse de la source

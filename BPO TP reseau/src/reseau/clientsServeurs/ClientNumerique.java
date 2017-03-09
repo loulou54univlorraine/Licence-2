@@ -1,5 +1,6 @@
 package reseau.clientsServeurs;
 
+import reseau.Machine;
 import reseau.couches.Application7;
 import reseau.Message;
 import reseau.adresses.Adresse;
@@ -7,10 +8,10 @@ import reseau.adresses.Adresse;
 /**
  * @author martine
  */
-public class ClientNumerique extends Application7 {    
+public class ClientNumerique extends Application7 {
 
-    public ClientNumerique(int port) {
-        super(port) ;
+    public ClientNumerique(int port, Machine m) {
+        super(port, m);
     }
    
     /**

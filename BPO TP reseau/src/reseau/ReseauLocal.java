@@ -23,8 +23,8 @@ public class ReseauLocal {
     }
 
     public void sendTrame(Message trame) {
-        for (int i = 0; i < reseaux.size(); i++) {
-            reseaux.get(i).receiveMessage(trame);
+        for (Liaison12 l : reseaux) {
+            l.receiveMessage(new Message(trame));
 
         }
 

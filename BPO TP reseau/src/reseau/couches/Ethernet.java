@@ -1,4 +1,5 @@
 
+
 package reseau.couches;
 
 import reseau.Message;
@@ -16,15 +17,14 @@ public class Ethernet extends Liaison12 {
 
     @Override
     public void sendMessage(AdresseMac dest, Message message) {
-        Message entete=getEntete(dest,message);
+        Message entete = getEntete(dest, message);
         entete.ajouter(message);
-        message=entete;
+        message = entete;
         // Afficher une trace de l'envoi
-        System.out.println("Je suis "+getNom()+" et j'envoie "+message.size()+" octets : " +message);
+        System.out.println("Je suis " + getNom() + " et j'envoie " + message.size() + " octets : " + message);
         // Transmettre à la couche
-        voisin.receiveMessage();
+        r.sendTrame(message);
     }
-
 
 
     /**
@@ -34,12 +34,18 @@ public class Ethernet extends Liaison12 {
     @Override
     public void receiveMessage(Message message) {
         AdresseMac adr=message.extraireAdresseMac();
-        message.supprimer(12);
         if(adrMac.toString().equals(adr.toString())){
             // Afficher une trace de la reception
+            System.out.println("Le message ets pour ma gueule");
+            message.supprimer(12);
             System.out.println("Je suis "+getNom()+" et je passse "+message.size()+" octets reçus : " +message);
-            r.sendTrame(message);
+            ((Reseau3) plusUn).receiveMessage(message);
+
+        } else {
+            System.out.println("Pas pour moi");
         }
+
+
     }
 
     @Override

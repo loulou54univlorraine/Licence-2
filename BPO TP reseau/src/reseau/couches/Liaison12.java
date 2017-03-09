@@ -35,6 +35,6 @@ public abstract class Liaison12 extends Couche {
     public abstract void receiveMessage(Message message) ;
 
     public void setReseau(ReseauLocal rl) {
-        r = rl;
+        this.r = rl;
     }
 }
