@@ -5,14 +5,18 @@
 #include <unistd.h>
 #include <string.h>
 #include <time.h>
-#include <fcntl.h>
+#include <fcntl.h>²
 #include <dirent.h>
 
 int main(int argc, char *argv[]) {
     struct stat s;
     char ref[1024];
     char file_to_name[1024];
-    strcpy(file_to_name, argv[2]);
+    char newName[1024];
+    strcpy(file_to_name,argv[1]);
+    strcat(newName,"copie_de_");
+    strcat(newName,file_to_name);
+
     strcpy(ref, argv[1]);
     if (argc == 2) {
         strcpy(ref, argv[1]);
@@ -36,26 +40,28 @@ int main(int argc, char *argv[]) {
         }
         char c;
         ssize_t nread;
-        file_to = open(file_to_name, O_WRONLY | O_CREAT | O_TRUNC, S_IRWXU);
+        int i = 0;
+        int continuer =0;
+        file_to = open(newName, O_WRONLY | O_CREAT | O_TRUNC, S_IRWXU);
         if (file_to < 0) {
             perror("Le fichier de copie n'a pas pu être crée/ouvert ");
         }
-        int i = 0;
+
         while (nread = read(file_from, &c, 1), nread > 0) {
             char *out = &c;
             ssize_t nwritten;
             if (i == 0) {
-                printf("%c",c);
-                printf("\n");
-                if (strcmp(out,"B")!=0){
-                    perror("Le fichier n'est pas un bitmap 1");
+                if (c=='B'){
+                    continuer=1;
+                }else{
+                    perror("Le fichier n'est pas un bitmap");
+                    exit(0);
                 }
             }
-             if(i == 1){
-                 printf("%c",c);
-                 printf("\n");
-                 if(strcmp(out,"M")!=0){
-                     perror("Le fichier n'est pas un bitmap 2");
+             if(i == 1 && continuer ==1){
+                 if(c!='M'){
+                     perror("Le fichier n'est pas un bitmap");
+                     exit(0);
                  }
              }
             i++;
