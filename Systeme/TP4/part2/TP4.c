@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <time.h>
-#include <fcntl.h>²
+#include <fcntl.h>
 #include <dirent.h>
 
 int main(int argc, char *argv[]) {
