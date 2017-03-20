@@ -33,7 +33,6 @@ public class IterateurLivre implements Iterator<String> {
             res = titre;
             titrelu=true;
         } else {
-
             if (iterateurFr.hasNext()) {
                 res = iterateurFr.next();
             } else {
