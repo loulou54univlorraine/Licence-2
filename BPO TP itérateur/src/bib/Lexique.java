@@ -55,5 +55,7 @@ public class Lexique implements Iterable<String> {
     public IterateurLexique iterator2() {
 
         return new IterateurLexique(lexique,nbMots);
+
     }
+
 }

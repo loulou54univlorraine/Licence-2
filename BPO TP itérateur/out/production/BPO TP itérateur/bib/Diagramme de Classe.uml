@@ -3,22 +3,45 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="222.0">bib.Lexique</node>
-    <node x="43.0" y="525.0">bib.test.TestLexique</node>
-    <node x="15.0" y="0.0">bib.iterateurs.IterateurLexique</node>
+    <node x="-127.77777777777783" y="528.3333333333334">bib.test.TestLivre</node>
+    <node x="148.9999999999999" y="305.77777777777777">bib.Livre</node>
+    <node x="0.0" y="0.0">bib.Lexique</node>
+    <node x="-338.1111111111111" y="430.55555555555554">bib.test.TestLexique</node>
+    <node x="564.4444444444443" y="86.88888888888891">bib.iterateurs.IterateurLexique</node>
+    <node x="282.33333333333326" y="530.0">bib.iterateurs.IterateurLivre</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="bib.Livre" target="bib.iterateurs.IterateurLivre">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="bib.iterateurs.IterateurLivre" target="bib.iterateurs.IterateurLexique">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
     <edge source="bib.test.TestLexique" target="bib.Lexique">
-      <point x="0.0" y="-31.5" />
-      <point x="0.0" y="126.5" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="bib.test.TestLivre" target="bib.Lexique">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="bib.test.TestLivre" target="bib.Livre">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
     <edge source="bib.Lexique" target="bib.iterateurs.IterateurLexique">
-      <point x="0.0" y="-126.5" />
-      <point x="0.0" y="86.0" />
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="bib.Livre" target="bib.Lexique">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="137.0" y="294.5" />
+  <settings layout="Hierarchic Group" zoom="0.6728971962616822" x="235.0" y="472.2430555555556" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
