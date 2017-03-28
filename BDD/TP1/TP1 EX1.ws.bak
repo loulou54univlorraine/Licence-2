@@ -31,10 +31,10 @@
 @i 3 @t 102 @g 1 @n "Module \"User Interface\"" 2272207078
 @d ""
 @i 4 @t 118 @f "..\..\..\..\Program Files (x86)\Win'Design\Win'Design 16.0\DONNEES\EXEMPLES\Cas IHM - MLD société X\modèles WD\WD_Demo.ws" @fc "C:\Program Files (x86)\Win'Design\Win'Design 16.0\DONNEES\EXEMPLES\Cas IHM - MLD société X\modèles WD\WD_Demo.ws" @n "Sté X Données - IHM - UML"
-@i 1 @t 103 @f "TP1 ex1.mcd" @n "Copie de TP1 ex1" @o
-@i 1 @t 103 @f "MLR1.mlr" @n "MLR1" @o
-@i 1 @t 103 @f "MLR2.mlr" @n "MLR2" @o
-@i 1 @t 103 @f "MLR3.mlr" @n "MLR3" @o
-@i 1 @t 103 @f "MCD2.mcd" @n "MCD2" @o
-@i 1 @t 103 @f "MLR4.mlr" @n "MLR4" @o
-@i 1 @t 103 @f "TP1 EX5 part 2.mcd" @n "TP1 EX5 part 2" @o
+@i 1 @t 103 @f "TP1 EX1.MCD" @n "Copie de TP1 ex1" @o
+@i 1 @t 103 @f "MLR1.MLR" @n "MLR1" @o
+@i 1 @t 103 @f "MLR2.MLR" @n "MLR2" @o
+@i 1 @t 103 @f "MLR3.MLR" @n "MLR3" @o
+@i 1 @t 103 @f "MCD2.MCD" @n "MCD2" @o
+@i 1 @t 103 @f "MLR4.MLR" @n "MLR4" @o
+@i 1 @t 103 @f "TP1 EX5 PART 2.MCD" @n "TP1 EX5 part 2" @o

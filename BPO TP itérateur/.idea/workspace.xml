@@ -1,58 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e14a8aa0-7f3c-44da-8d55-8a8b685c1ec3" name="Default" comment="TP Jeu de mot 1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/MCD2.mcd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/MLR1.mlr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/MLR2.mlr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/MLR3.mlr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/MLR4.mlr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP1 EX1.ws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP1 EX1.ws.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP1 EX5 part 2.mcd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP1 ex1.mcd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP1 ex1.mcd.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP2 EXO 1.mcd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP2 EXO 1.mcd.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP2 EXO 1.mlr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP2 EXO 1.mlr.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/out/production/BPO TP Jeu de mots/projetBPO/jeux/Dictionnaire.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/out/production/BPO TP Jeu de mots/projetBPO/jeux/Etat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/out/production/BPO TP Jeu de mots/projetBPO/jeux/JeuDeMots.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/ArcticImage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/Iceberg2D.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/Jeu.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/Morse.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/Ocean.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/Pingouin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/out/production/BPO TP jeu pingouin/glaces/TestArticImage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Robotique/TP2-2 ligne droite V1.qrs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Robotique/TP3-1 suivre mur.qrs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP1 EX1.SQL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP2.ws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BDD/TP1/TP2.ws.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/BPO TP Jeu de mots.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/Dictionnaires/dico3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/Dictionnaires/dico4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/Dictionnaires/dico5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/src/projetBPO/jeux/Dictionnaire.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/src/projetBPO/jeux/Etat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/src/projetBPO/jeux/JeuDeMots.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../System/TP5/awkfiles.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP itérateur/bib/Diagramme de Classe.uml" afterPath="$PROJECT_DIR$/out/production/BPO TP itérateur/bib/Diagramme de Classe.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BPO TP itérateur/bib/iterateurs/IterateurLivre.class" afterPath="$PROJECT_DIR$/out/production/BPO TP itérateur/bib/iterateurs/IterateurLivre.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BPO TP floats/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BPO TP floats/.idea/workspace.xml" />
+    <list default="true" id="e14a8aa0-7f3c-44da-8d55-8a8b685c1ec3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BPO TP Jeu de mots/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bib/Lexique.java" afterPath="$PROJECT_DIR$/src/bib/Lexique.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BPO TP jeu pingouin/.idea/misc.xml" afterPath="$PROJECT_DIR$/../BPO TP jeu pingouin/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BPO TP reseau/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BPO TP reseau/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../System/TP5/scriptawkinfopc.bash" afterPath="$PROJECT_DIR$/../System/TP5/scriptawkinfopc.bash" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -752,7 +703,7 @@
       <workItem from="1489993386178" duration="6677000" />
       <workItem from="1490356785050" duration="974000" />
       <workItem from="1490597253547" duration="623000" />
-      <workItem from="1490604071136" duration="98000" />
+      <workItem from="1490604071136" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="TP Iterateur">
       <created>1489999892407</created>
@@ -768,11 +719,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489999996243</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TP Jeu de mot 1">
+      <created>1490604194742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1490604194742</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8372000" />
+    <option name="totallyTimeSpent" value="8479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
