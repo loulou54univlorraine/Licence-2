@@ -14,7 +14,7 @@ public class JeuDeMots extends Etat{
     public boolean equals(Object obj){
         boolean res=false;
         if(obj instanceof JeuDeMots){
-             res=mot.equals(((JeuDeMots) obj).mot);
+            res=mot.equals(((JeuDeMots) obj).mot);
         }
         return res;
     }
