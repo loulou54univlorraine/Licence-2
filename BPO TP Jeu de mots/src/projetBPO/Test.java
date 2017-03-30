@@ -4,7 +4,7 @@ package projetBPO;
 import projetBPO.jeux.Dictionnaire;
 import projetBPO.jeux.Etat;
 import projetBPO.jeux.JeuDeMots;
-import projetBPO.jeux.ProfondeurDAbord;
+import projetBPO.jeux.algos.ProfondeurDAbord;
 
 import java.io.IOException;
 

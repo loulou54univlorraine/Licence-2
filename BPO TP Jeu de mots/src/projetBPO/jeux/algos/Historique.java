@@ -1,4 +1,6 @@
-package projetBPO.jeux;
+package projetBPO.jeux.algos;
+
+import projetBPO.jeux.Etat;
 
 import java.util.ArrayList;
 
