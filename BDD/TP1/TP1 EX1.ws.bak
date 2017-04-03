@@ -38,3 +38,5 @@
 @i 1 @t 103 @f "MCD2.MCD" @n "MCD2" @o
 @i 1 @t 103 @f "MLR4.MLR" @n "MLR4" @o
 @i 1 @t 103 @f "TP1 EX5 PART 2.MCD" @n "TP1 EX5 part 2" @o
+@i 1 @t 103 @f "..\PROJET\MCD1.MCD" @n "MCD1" @o
+@i 1 @t 103 @f "..\PROJET\MLR1.MLR" @n "MLR1" @o
