@@ -1,4 +1,4 @@
-package projetBPO.jeux.algos;
+package projetBPO.algos;
 
 import projetBPO.jeux.Etat;
 

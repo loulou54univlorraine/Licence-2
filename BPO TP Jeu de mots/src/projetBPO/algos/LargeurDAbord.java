@@ -1,8 +1,7 @@
-package projetBPO.jeux.algos;
+package projetBPO.algos;
 
 import projetBPO.jeux.Etat;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
